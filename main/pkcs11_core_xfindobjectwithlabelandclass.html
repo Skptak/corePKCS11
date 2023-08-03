@@ -105,14 +105,14 @@ $(document).ready(function(){initNavTree('pkcs11_core_xfindobjectwithlabelandcla
 <div class="line">                                    CK_ULONG ulLabelNameLen,</div>
 <div class="line">                                    CK_OBJECT_CLASS xClass,</div>
 <div class="line">                                    CK_OBJECT_HANDLE_PTR pxHandle );</div>
-<div class="ttc" id="acore__pkcs11_8h_html_a6f97ebff17fdfd0f2dc404b2c61010ae"><div class="ttname"><a href="core__pkcs11_8h.html#a6f97ebff17fdfd0f2dc404b2c61010ae">xFindObjectWithLabelAndClass</a></div><div class="ttdeci">CK_RV xFindObjectWithLabelAndClass(CK_SESSION_HANDLE xSession, char *pcLabelName, CK_ULONG ulLabelNameLen, CK_OBJECT_CLASS xClass, CK_OBJECT_HANDLE_PTR pxHandle)</div><div class="ttdoc">Searches for an object with a matching label and class provided.</div><div class="ttdef"><b>Definition:</b> core_pkcs11.c:317</div></div>
+<div class="ttc" id="acore__pkcs11_8h_html_a6f97ebff17fdfd0f2dc404b2c61010ae"><div class="ttname"><a href="core__pkcs11_8h.html#a6f97ebff17fdfd0f2dc404b2c61010ae">xFindObjectWithLabelAndClass</a></div><div class="ttdeci">CK_RV xFindObjectWithLabelAndClass(CK_SESSION_HANDLE xSession, char *pcLabelName, CK_ULONG ulLabelNameLen, CK_OBJECT_CLASS xClass, CK_OBJECT_HANDLE_PTR pxHandle)</div><div class="ttdoc">Searches for an object with a matching label and class provided.</div><div class="ttdef"><b>Definition:</b> core_pkcs11.c:339</div></div>
 </div><!-- fragment --><p>Searches for an object with a matching label and class provided.  </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">xSession</td><td>An open PKCS #11 session. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pcLabelName</td><td>A pointer to the object's label (CKA_LABEL). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ulLabelNameLen</td><td>The size (in bytes) of pcLabelName. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">xClass</td><td>The class (CKA_CLASS) of the object. ex: CKO_PUBLIC_KEY, CKO_PRIVATE_KEY, CKO_CERTIFICATE </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xClass</td><td>The class (CKA_CLASS) of the object. ex: CKO_PUBLIC_KEY, CKO_PRIVATE_KEY, CKO_CERTIFICATE</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pxHandle</td><td>Pointer to the location where the handle of the found object should be placed.</td></tr>
   </table>
   </dd>
